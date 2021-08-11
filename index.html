@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Images/favicon .ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -12,8 +13,19 @@
 </head>
 <body>
         <header>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#footer">Contacto</a></li>
+                    <li><a href="#Nosotros">Nosotros</a></li>
+                 </ul>
+            </nav>
             <div class="header__bg">
                 <img src="./Images/Mobile-frame.png" alt="background">
+            </div>
+            <div class="header__bg2">
+                <img src="./Images/Frame-header.png" alt="background">
             </div>
             <div class="header__logo">
                 <img src="./Images/logo-violeta.png" alt="Neubex">
@@ -26,21 +38,27 @@
             </div>
         </header>
         <section class="section1" id="servicios">
-            <div class="section1__content">
+            <div class="section1__bg">
+                <img src="./Images/Section1-bg.png" alt="">
+            </div>
+            <div class="section1__content" id="servicios">
                 <h2>Nuestros Servicios</h2>
+                    <div class="caja">
+                        <a href="desarrollo-web.html"><img src="./Images/wd.svg" alt="Web Development"></a>
+                        <h3>Desarrollo Web</h3>
+                        <p>Desarrollamos su sitio web de acuerdo con las especificaciones tecnicas de su empresa</p>
+                    </div>
                 <div class="caja">
-                    <a href="desarrollo-web.html"><img src="./Images/wd.svg" alt="Web Development"></a>
-                    <h3>Desarrollo Web</h3>
-                    <p>Desarrollamos su sitio web de acuerdo con las especificaciones tecnicas de su empresa</p>
-                </div>
-                <div class="caja">
-                    <a href=""><img src="./Images/md.svg" alt="Mobile Development" id="wd"></a>
+                    <a href="./desarrollo-mobil.html"><img src="./Images/md.svg" alt="Mobile Development" id="wd"></a>
                     <h3>Desarrollo Movil</h3>
                     <p>Creamos una App con un diseño unico y especializado con el fin de mejorar la funcionalidad de su empresa</p>
                 </div>
             </div>
         </section>
-        <section class="section2">
+        <section class="section2" id="Nosotros">
+            <div class="section2__bg">
+                <img src="./Images/Section2-bg.png" alt="">
+            </div>
             <div class="section2__content">
                 <img src="./Images/team.svg" alt="Neubex Team">
                 <h3>Sobre Nosotros</h3>
