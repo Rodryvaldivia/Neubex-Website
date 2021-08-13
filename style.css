@@ -245,6 +245,15 @@ footer {
   }
   @media screen and (min-width: 700px) {
 
+    @keyframes preloader {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
     /* Header */
     .header__bg2 img {
         visibility: visible;
@@ -265,29 +274,27 @@ footer {
         list-style: none;
         width: 100%;
         justify-content: center;
+        text-align: center;
     }
-    .header__nav ul li {
-        padding: 10px 35px;
+    .header__nav ul a {
         border-radius: 10px;
+        text-decoration: none;
+        color: #f0f0f4;
+        font-family: 'Raleway';
+        padding-top: 8px;
+        width: 100px;
+        height: 35px;
         margin-left: 2%;
-        margin-top: 3%;
+        margin-top: 3.5%;
         transition-property: background-color;
         transition-duration: .5s;
         cursor: pointer;
     }
 
-
-    .header__nav ul li a {
-        color: #f0f0f4;
-        text-decoration: none;
-        font-family: 'Raleway';
-        font-weight: 600;   
-    }
-    .header__nav ul li:hover {
+    .header__nav ul a:hover {
         background-color: #f0f0f4;
-    }
-    .header__nav ul li:hover > a {
-        color: #3F3D56
+        color: #3F3D56;
+        font-weight: 600;
     }
 
     .header__bg img{
@@ -326,6 +333,7 @@ footer {
         margin-top: 20px;
         transition-property: box-shadow;
         transition-duration: .5s;
+        cursor: pointer;
     }
     header .header__content button a {
         font-size: 20px;
