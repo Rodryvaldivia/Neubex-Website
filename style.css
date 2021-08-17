@@ -426,6 +426,9 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: .8s;
     }
     .section1__content a {
         width: 346px;
@@ -452,6 +455,9 @@ footer {
         display: flex;
         flex-direction: row;
         background-color: transparent;
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: .8s;
     }
     .section2__bg img{
         visibility: visible;
@@ -500,6 +506,11 @@ footer {
     .section2__content h4 {
         font-size: 20px;
         margin-top: 20px;
+    }
+    .contacto {
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: .8s;
     }
     .contacto__content {
         width: 100%;
