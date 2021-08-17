@@ -8,18 +8,22 @@ html {
     scroll-behavior: smooth;
 }
 
+.volver2 a{
+    position: absolute;
+    right: 0;
+    margin-top: 12%;
+    margin-right: 5%;
+    font-size: 28px;
+    color: #f0f0f4;
+    animation: fadeUp .5s ease-in-out 1s forwards;
+    opacity: 0;
+}
+
 /* Section1 */
 .section1 {
     width: 100%;
     height: 100vh;
-}
-
-.section1__gb img{
-    background-size: cover;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
+    background-color: #FF6584;
 }
 
 .section1__content {
@@ -55,37 +59,68 @@ html {
     opacity: 0;
 }
 
-.section1 button {
-    padding: 10px 15px;
+.section1__content a {
+    text-decoration: none;
+    color: #FF6584;
+    background-color: white;
+    width: 50%;
+    height: 0%;
+    padding: 10px 25px;
+    text-align: center;
     margin-top: 10px;
-    background-color: #F33F7E;
-    border: none;
     border-radius: 5px;
-    box-shadow: -3px 3px 4px #00000044;
-    margin-top: 5%;
-    width: 40%;
-    animation: fadeUp .5s ease-in-out .9s forwards;
+    font-family: 'Raleway';
+    font-weight: 600;
+    box-shadow: -8px 8px 2px #00000044;
+    margin-left: 7%;
+    animation: fadeUp .5s ease-in-out 1s forwards;
     opacity: 0;
 }
-
-.section1 button a {
-    color: #f0f0f4;
-    text-decoration: none;
-}
-
 /* section2 */ 
 
 .section2 {
     width: 100%;
     height: 100vh;
 }
-.section2__gb img{
-    background-size: cover;
-    position: absolute;
+.section2__bg img{
+    visibility: hidden;
+    display: none;
+}
+.section2__bg2 img{
     width: 100%;
     height: 100vh;
+    position: absolute;
+    background-size: cover;
     z-index: -1;
 }
+.section2__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 10%;
+}
+.section2__text {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.section2__content img {
+    width: 80%;
+}
+.section2__text h2 {
+    color: #f0f0f4;
+    font-family: 'Raleway';
+    font-size: 34px;
+}
+.section2__text p {
+    color: #f0f0f4;
+    font-family: 'Raleway';
+    font-size: 18px;
+    width: 90%;
+    margin-top: 10px;
+}
+
 
 @keyframes fadeSimple {
     from {
@@ -133,7 +168,7 @@ html {
     .section1 {
         width: 100%;
         height: 100vh;
-        background-color: #F33F7E;
+        background-color: #FF6584;
     }
     .section1__logo img {
         width: 15%;
@@ -151,6 +186,7 @@ html {
 
     .section1__content h1 {
         font-size: 60px;
+        margin-top: 8%;
     }
     .section1__content p {
         font-size: 24px;
@@ -173,9 +209,59 @@ html {
         border-radius: 5px;
         transition-property: box-shadow;
         transition-duration: .3s;
+        margin-left: 0%;
+        box-shadow: none;
       }
+
       .section1__content a:hover {
         box-shadow: -8px 8px 2px #00000044;
       }
 
+      .section2__bg img{
+          position: absolute;
+          width: 100%;
+          height: 100vh;
+          z-index: -1;
+          background-size: cover;
+          display: block;
+          visibility: visible;
+      }
+      .section2__bg2 img {
+          visibility: hidden;
+          display: none;
+      }
+
+      .section2__content {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          position: absolute;
+          margin-top: 10%;
+          margin-left: 10%;
+      }
+      
+      .section2__content img {
+          width: 43%;
+          transition-property: width, transform;
+          transition-duration: .2s;
+      }
+      .section2__text {
+          margin-left: 8%;
+          margin-top: 10%;
+      }
+      .section2__text h2 {
+          color: #3F3D56;
+          font-family: 'Raleway';
+          font-size: 64px;
+      }
+
+      .section2__text p {
+        color: #3F3D56;
+        font-family: 'Raleway';
+        font-size: 24px;
+        width: 80%;
+      }
+      .section2__content img:hover {
+          transform: translateY(-10px);
+      }
   }
