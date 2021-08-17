@@ -253,6 +253,9 @@ html {
           width: 43%;
           transition-property: width, transform;
           transition-duration: .2s;
+          opacity: 0;
+          transition-property: opacity;
+          transition-duration: .5s;
       }
       .section2__text {
           margin-left: 8%;

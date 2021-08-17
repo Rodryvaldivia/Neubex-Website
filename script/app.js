@@ -4,7 +4,7 @@ function aparecerScroll(){
     let elemento2 = document.getElementsByClassName("section2");
     let elemento3 = document.getElementsByClassName("contacto")
 
-    document.addEventListener("wheel",function (){
+    document.addEventListener("scroll",function (){
         let topVent = html.scrollTop;
         for(i=0; i < elemento1.length; i++){
             let tope1 = elemento1[i].offsetTop;
@@ -24,7 +24,7 @@ function aparecerScroll(){
                 elemento3[i].style.opacity = 1;
             }
         }
-    })                                                
+    })                                      
 }
 
 aparecerScroll();
