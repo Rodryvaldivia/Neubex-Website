@@ -144,6 +144,15 @@ html {
 
 
   /* Media Queries */ 
+  @media screen and (min-width: 700px) and (max-width: 1400px){
+      .section1 .section1__content {
+          margin-top: 0%;
+      }
+      .section1 .section1__content a {
+          font-size: 18px;
+      }
+  }
+
 
   @media screen and (min-width: 700px) {
     .volver2 {

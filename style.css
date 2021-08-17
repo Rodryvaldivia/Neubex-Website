@@ -117,7 +117,6 @@ header {
 
 .caja img {
     width: 85%;
-    object-fit: contain;
     padding-top: 10px;
 }
 #dm img {
@@ -276,20 +275,36 @@ footer {
   }
 
   /* Media Queries */
-  @media screen and (max-width: 1550px) and (min-width:748px){
-      header .header__content img {
-          transform: translateX(-60px);
-          height: 100%;
-      }
-      .caja #wd {
+  @media screen and (min-width: 700px) and (max-width: 1400px){
+    header .header__content h1 {
+          font-size: 60px;
+    }
+    header .header__content img {
+        transform: translateX(-100px) translateY(100px);
+        height: 300px;
+    }
+    .section1__content a img{
+        width: 200px;
+    }
+    .section1__content {
+        margin-top: 0px;
+    }
+    .section1 h2 {
+        margin-top: 5%;
+    }
+    .section1 .section1__content a {
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+    }
+    .caja {
+        padding-top: 30px;
+    }
+    .contacto .contacto__content img {
         width: 50%;
-        height: 50px;
     }
-    .contacto__content img {
-        width: 35%;
-        margin-top: 10px;
-    }
-  }
+}
+
   @media screen and (min-width: 700px) {
 
     @keyframes preloader {
