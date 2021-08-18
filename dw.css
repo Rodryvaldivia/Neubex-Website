@@ -156,20 +156,20 @@ html {
 
   @media screen and (min-width: 700px) {
     .volver2 {
-        position: absolute;
+        position: fixed;
         right: 0;
         margin-right: 4%;
         margin-top: 4%;
       }
       .volver2 a {
-        color: #f0f0f46e;
+        color: #3F3D56;
         font-size: 40px;
         transition-property: color;
         transition-duration: .3s;
       }
       .volver2 a:hover {
-        color: #f0f0f4;
-      }
+        color: #3f3d56b6;
+    }
     .section1__gb img {
         visibility: hidden;
         display: none;
@@ -253,13 +253,10 @@ html {
           width: 43%;
           transition-property: width, transform;
           transition-duration: .2s;
-          opacity: 0;
-          transition-property: opacity;
-          transition-duration: .5s;
       }
       .section2__text {
           margin-left: 8%;
-          margin-top: 10%;
+          margin-top: 2%;
       }
       .section2__text h2 {
           color: #3F3D56;
@@ -275,5 +272,25 @@ html {
       }
       .section2__content img:hover {
           transform: translateY(-10px);
+      }
+
+      .section2__text a {
+          background-color: #FF6584;
+          position: absolute;
+          padding: 20px;
+          color: #f0f0f4;
+          text-decoration: none;
+          font-family: "Raleway";
+          font-size: 18px;
+          border-radius: 10px;
+          margin-top: 20px;
+          transition-property: background-color, border, color;
+          transition-duration: .2s;
+          border: solid 1px #FF6584;
+      }
+      .section2__text a:hover {
+          background-color: #f0f0f4;
+          border: 1px solid #FF6584 ;
+          color: #FF6584;
       }
   }

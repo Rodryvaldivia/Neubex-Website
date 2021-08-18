@@ -414,13 +414,15 @@ footer {
         flex-direction: column;
         width: 100%;
         height: 100vh;
-        background-color: none;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(240,240,244,1) 100%);
     }
     .section1 h2 {
         text-align: center;
-        color: #f0f0f4;
+        color: #3F3D56;
         font-family: 'Raleway';
         font-size: 40px;
+        margin-top: 5%;
     }
     .section1__content  {
         display: flex;
@@ -433,10 +435,10 @@ footer {
     .section1__content a {
         width: 346px;
         height: 393px;
-        background-color: #f0f0f4;
+        background-color: white;
         border-radius: 30px;
         text-align: center;
-        margin: 10% 5%;
+        margin: 5% 5%;
         box-shadow: -10px 10px 4px #00000044;
         transition-property: box-shadow, transform;
         transition-duration: .3s;
