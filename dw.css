@@ -385,8 +385,12 @@ html {
           z-index: -5;
           background-size: cover;
           position: absolute;
-         visibility: visible;
+        visibility: visible;
          display: block;
+      }
+      .section3 .section3__bg2 img {
+          visibility: hidden;
+          display: none;
       }
       .section3__content {
           display: flex;
@@ -454,6 +458,7 @@ html {
       }
       .caja__vector img {
           width: 95%;
-          margin-top: 0%
+          height: 100%;
+          margin-top: 20%;
       }
   }
