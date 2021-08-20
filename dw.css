@@ -232,6 +232,12 @@ html {
       .section1 .section1__content a {
           font-size: 18px;
       }
+      .section3__content .caja__texto {
+          margin-top: 7%;
+      }
+      .section3__content .caja__texto h2 {
+          font-size: 24px;
+      }
   }
 
 
