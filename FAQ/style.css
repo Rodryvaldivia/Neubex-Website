@@ -1,0 +1,349 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8%;
+    margin-left: 2%;
+    margin-top: 2%;
+    opacity: 0;
+    animation: fadeUp .5s ease-in-out .2s forwards; 
+}
+
+.big-box {
+    width: 75%;
+    height: 80%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 100%);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeUp .5s ease-in-out .4s forwards;
+    opacity: 0;
+}
+
+.box-content {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 50%;
+    font-family: 'Raleway';
+    margin-left: 10%;
+    animation: fadeUp .5s ease-in-out .6s forwards;
+    opacity: 0;
+}
+
+.text h1 {
+    color: #444053;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.text h3 {
+    color: #444053;
+    font-size: 1.5rem;
+    font-weight: inherit;
+    margin-bottom: 20px;
+}
+
+.text a {
+    padding: 20px;
+    position: absolute;
+    background-color: #3073FF;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #f0f0f4;
+    border: 2px solid #3073FF;
+    transition-property: background-color, color;
+    transition-duration: .2s;
+}
+.text a:hover {
+    background-color: transparent;
+    color: #3073FF;
+}
+.label {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25%;
+    margin-right: 18%;
+}
+.label i {
+    color: #3073FF;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.label h3{
+    color: #3073FF;
+    font-family: 'Raleway';
+}
+.box-content img{
+    width: 45%;
+    margin-right: 15%;
+    margin-top: 10%;
+    animation: fadeUp .5s ease-in-out .8s forwards;
+    opacity: 0;
+}
+
+.acordeon {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    animation: fadeUp .5s ease-in-out 1s forwards;
+    opacity: 0;
+}
+
+.acordeon .contentBx {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.acordeon .contentBx .label {
+    position: relative;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.acordeon .contentBx .label::before {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translatey(-50%);
+    font-size: 1.5em;
+}
+
+.acordeon .contentBx .content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    overflow-y: auto;
+    text-align: center;
+}
+.acordeon .contentBx .content p {
+    font-family: 'Raleway';
+    color: #444053;
+    margin: 0px auto;
+    text-align: center;
+}
+.acordeon .contentBx.active .content {
+    height: 150px;
+    padding: 10px;
+    overflow-y: hidden;
+}
+
+.section2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.medium-box{
+    width: 60%;
+    height: 200px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 100%);
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 4%;
+    margin-top: 15%;
+}
+.medium-box h3 {
+    font-family: 'Raleway';
+    color: #44405398;
+    font-size: 30px;
+}
+#email {
+    width: 20%;
+    height: 50px;
+    border: 1px solid #44405398;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-left: 20px;
+    color: #44405398;
+    font-family: 'Raleway';
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#nombre {
+    width: 20%;
+    height: 50px;
+    border: 1px solid #44405398;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-left: 20px;
+    color: #44405398;
+    font-family: 'Raleway';
+}
+
+#mensaje {
+    width: 60%;
+    height: 200px;
+    margin: 0px auto;
+    border: 1px solid #44405398;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-family: 'Raleway'
+}
+
+#mensaje:focus {
+    outline: none;
+}
+#email:focus {
+    outline: none;
+}
+#nombre:focus {
+    outline: none;
+}
+#enviar {
+    width: 20%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 2px solid #3073FF;
+    border-radius: 10px;
+    background-color: #3073FF;
+    color: #f0f0f4;
+    font-family: 'Raleway';
+    transition-property: background-color, color;
+    transition-duration: .2s;
+}
+#enviar:hover {
+    background-color: transparent;
+    color: #3073FF;
+    cursor: pointer;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes fadeUp {
+    from{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo img {
+        width: 60%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        position: absolute;
+        width: 30%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    .box-content {
+        flex-direction: column;
+    }
+    .big-box {
+        margin-top: 25%;
+    }
+    .text {
+        width: 100%;
+        margin-left: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text h1 {
+        font-size: 20px;
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 5px;
+        margin-top: 10%;
+        text-align: center;
+    }
+    .text h3 {
+        font-size: 15px;
+    }
+    .text a {
+        padding: 10px 15px;
+        position: sticky;
+    }
+    .box-content img {
+        width: 80%;
+        margin: 20px auto;
+    }
+    .acordeon {
+        width: 100%;
+        position: sticky;
+    }
+    .label {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .section1 {
+        width: 100%;
+        height: min-content;
+    }
+
+    .section2 {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .medium-box {
+        width: 80%;
+    }
+    .medium-box h3 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    #email {
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+    }
+    #nombre {
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+    }
+    #mensaje {
+        width: 90%;
+    }
+    #enviar {
+        width: 90%;
+    }
+}
